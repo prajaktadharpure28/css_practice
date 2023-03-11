@@ -9,7 +9,7 @@
     <style>
         .container {
             background-color: red;
-            height: 455px;
+            height: 146px;
         }
 
         .box {
@@ -25,12 +25,14 @@
             /* transform: scale3d(4, 7, 2); */
             /* transform: skew(10deg, 20deg); */
         }
+
         img {
-            width: 455px;
+            width: 146px;
             transition-property: width;
-            transition-duration: 2s;
+            transition-duration: 1s;
             transition-timing-function: ease-in;
         }
+
         /* img:hover {
             width: 56px;
         } */
@@ -40,9 +42,9 @@
 <body>
     <div class="container">
         <div class="box">
-            <img src="https://source.unsplash.com/260x120/?nature,water" alt="" class="box">
+            <img id="myImage" src="https://source.unsplash.com/960x520/?nature,water">
+            <button id="btn">Toggle</button>
         </div>
     </div>
 </body>
-
 </html>
