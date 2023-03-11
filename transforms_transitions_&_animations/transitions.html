@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transforms</title>
+    <title>Transition</title>
     <style>
         .container {
             background-color: red;
@@ -14,9 +14,10 @@
 
         .box {
             border: 2px solid black;
+            display: inline-block;
             /* transform: translate(134px, 56px) rotate(0.25turn);  */
             /* transform: translate(134px, 56px) rotate(45deg); */
-            transform-origin: 0;
+            /* transform-origin: 0;  */
             /* transform: scale(4, 7); */
             /* transform: scaleX(8); */
             /* transform: scaleY(8); */
@@ -24,16 +25,22 @@
             /* transform: scale3d(4, 7, 2); */
             /* transform: skew(10deg, 20deg); */
         }
+        img {
+            width: 455px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+        }
+        /* img:hover {
+            width: 56px;
+        } */
     </style>
 </head>
 
 <body>
     <div class="container">
-        <!-- <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere deserunt expedita hic odio,
-            atque modi animi culpa dolor illo, ex quae mollitia accusantium dolore obcaecati minus magni possimus. Fugit
-            velit ut placeat nisi itaque.</div> -->
         <div class="box">
-            <img src="https://source.unsplash.com/260x120/?nature,water" alt="">
+            <img src="https://source.unsplash.com/260x120/?nature,water" alt="" class="box">
         </div>
     </div>
 </body>
